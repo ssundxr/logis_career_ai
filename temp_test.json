@@ -1,0 +1,25 @@
+{
+  "job": {
+    "job_id": "job-1",
+    "country": "UAE",
+    "title": "Machine Learning Engineer",
+    "industry": "Logistics",
+    "sub_industry": "Supply Chain",
+    "min_experience_years": 3,
+    "max_experience_years": 8,
+    "salary_min": 10000,
+    "salary_max": 20000,
+    "currency": "AED",
+    "required_skills": ["python", "ml", "fastapi"],
+    "job_description": "We are hiring an ML Engineer to build candidate ranking systems for logistics recruitment."
+  },
+  "candidate": {
+    "candidate_id": "cand-1",
+    "current_country": "UAE",
+    "expected_salary": 15000,
+    "total_experience_years": 5.5,
+    "education_level": "Bachelors in Computer Science",
+    "skills": ["python", "ml", "fastapi", "sql"],
+    "employment_summary": "ML engineer with experience in logistics and supply chain analytics."
+  }
+}

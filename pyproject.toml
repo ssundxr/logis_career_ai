@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logis-ai-candidate-engine"
+version = "1.0.0"
+description = "Enterprise-grade AI Candidate Evaluation Engine for ATS systems."
+readme = "logis_ai_candidate_engine/README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "fastapi",
+  "uvicorn",
+  "pydantic",
+  "pyyaml",
+  "numpy",
+]
+
+[project.optional-dependencies]
+ml = [
+  "sentence-transformers; python_version < '3.13'",
+]
+dev = [
+  "pytest",
+  "httpx<0.28",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["logis_ai_candidate_engine*"]
+
+[tool.setuptools.package-data]
+logis_ai_candidate_engine = [
+  "config/*.yaml",
+  "data/*",
+  "ui/*",
+]
