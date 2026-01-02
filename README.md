@@ -1,27 +1,27 @@
-# 🚀 Logis AI Candidate Ranking Engine - v2.0.0
+# Logis AI Candidate Ranking Engine - v2.0.0
 
 ## Enterprise-Grade AI-Powered Candidate Ranking System
 **Built to Senior SDE/ML Engineer Standards (Google/Microsoft Level)**
 
 ---
 
-## 📋 Overview
+##  Overview
 
 A production-ready, intelligent candidate ranking system for **Logis Career** (GCC logistics recruitment platform). Combines rule-based hard filters, multi-signal soft scoring, advanced skill matching, and **enterprise-grade hybrid scoring** with confidence quantification.
 
 **Key Features**:
-- ✅ Hard rejection engine (eligibility filtering)
-- ✅ Multi-signal soft scoring (skills, experience, semantic fit)
-- ✅ Advanced skill matching (exact, synonym, semantic with 300+ skills taxonomy)
-- ✅ NER-based CV parsing (Phase 3)
-- ✅ **Contextual adjustments** - 13 intelligent bonuses/penalties (Phase 4)
-- ✅ **Confidence scoring** - ML-grade uncertainty quantification (Phase 4)
-- ✅ **Feature interactions** - Non-linear relationship detection (Phase 4)
-- ✅ **Smart weight optimization** - Job-level adaptive weighting (Phase 4)
+-  Hard rejection engine (eligibility filtering)
+-  Multi-signal soft scoring (skills, experience, semantic fit)
+-  Advanced skill matching (exact, synonym, semantic with 300+ skills taxonomy)
+-  NER-based CV parsing (Phase 3)
+-  **Contextual adjustments** - 13 intelligent bonuses/penalties (Phase 4)
+-  **Confidence scoring** - ML-grade uncertainty quantification (Phase 4)
+-  **Feature interactions** - Non-linear relationship detection (Phase 4)
+-  **Smart weight optimization** - Job-level adaptive weighting (Phase 4)
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
@@ -38,22 +38,22 @@ INPUT: Job + Candidate
   │    ├─> Experience Scorer (years + GCC boost)
   │    └─> Semantic Similarity Scorer (profile matching)
   │
-  ├─> Phase 4: Smart Weight Optimization ⭐
+  ├─> Phase 4: Smart Weight Optimization 
   │    └─> Dynamic weights by job level (entry/mid/senior/exec)
   │
   ├─> Weighted Aggregation → Base Score
   │
-  ├─> Phase 4: Contextual Adjustments ⭐
+  ├─> Phase 4: Contextual Adjustments 
   │    ├─> GCC bonuses (+5 to +8)
   │    ├─> Perfect match amplification (+5)
   │    ├─> Overqualified penalties (-5)
   │    ├─> Job hopping penalties (-4)
   │    └─> Salary sweet spot bonuses (+3)
   │
-  ├─> Phase 4: Feature Interaction Detection ⭐
+  ├─> Phase 4: Feature Interaction Detection 
   │    └─> Skills ↔ Experience interactions
   │
-  ├─> Phase 4: Confidence Quantification ⭐
+  ├─> Phase 4: Confidence Quantification 
   │    ├─> Data completeness analysis
   │    ├─> Signal agreement check
   │    └─> Boundary distance calculation
@@ -87,9 +87,9 @@ logis_ml_engine/
 │   │   │   ├── domain_scorer.py
 │   │   │   ├── education_scorer.py
 │   │   │   ├── salary_scorer.py
-│   │   │   ├── contextual_adjuster.py  # ⭐ Phase 4
-│   │   │   ├── confidence_calculator.py # ⭐ Phase 4
-│   │   │   └── advanced_scorer.py      # ⭐ Phase 4
+│   │   │   ├── contextual_adjuster.py  #  Phase 4
+│   │   │   ├── confidence_calculator.py #  Phase 4
+│   │   │   └── advanced_scorer.py      #  Phase 4
 │   │   └── schemas/
 │   │       ├── candidate.py
 │   │       ├── job.py
@@ -108,8 +108,8 @@ logis_ml_engine/
 │   └── tests/
 │       ├── test_rules.py
 │       ├── test_api.py
-│       ├── test_phase4_hybrid_scoring.py  # ⭐ 37 integration tests
-│       └── test_phase4_smoke.py           # ⭐ Component tests
+│       ├── test_phase4_hybrid_scoring.py  # 37 integration tests
+│       └── test_phase4_smoke.py           #  Component tests
 │
 ├── PHASE4_COMPLETE.md                     # Phase 4 documentation
 ├── PHASE4_QUICK_REFERENCE.md              # Quick reference guide
@@ -118,7 +118,7 @@ logis_ml_engine/
 
 ---
 
-## 🔥 Phase 4 Highlights (v2.0.0)
+##  Phase 4 Highlights (v2.0.0)
 
 ### 1. Contextual Adjustment Engine
 **13 Intelligent Rules**:
@@ -161,7 +161,7 @@ logis_ml_engine/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Installation
 ```bash
@@ -208,7 +208,7 @@ python test_phase4_api.py
 
 ---
 
-## 📊 API Example
+##  API Example
 
 ### Request
 ```json
@@ -277,7 +277,7 @@ python test_phase4_api.py
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ### Test Coverage
 - **Phase 1**: Hard rejection engine (8 tests)
@@ -342,26 +342,26 @@ pytest logis_ai_candidate_engine/tests/test_phase4_hybrid_scoring.py -v
 
 ---
 
-## 🔄 Development Phases
+## Development Phases
 
-### ✅ Phase 0: Schema Alignment
+###  Phase 0: Schema Alignment
 - Aligned job/candidate schemas with ATS
 
-### ✅ Phase 1: Hard Rejection Engine
+### Phase 1: Hard Rejection Engine
 - Eligibility filtering (experience, salary, location)
 
-### ✅ Phase 2: Skill Intelligence
+###  Phase 2: Skill Intelligence
 - Enhanced taxonomy (300+ skills)
 - Semantic matching (sentence-transformers)
 - Synonym & relationship groups
 
-### ✅ Phase 3: CV Parsing
+###  Phase 3: CV Parsing
 - NER-based CV extraction
 - Pattern matching (emails, phones, LinkedIn, dates)
 - Skills, experience, education extraction
 - CV → Candidate mapping
 
-### ✅ Phase 4: Advanced Hybrid Scoring
+###  Phase 4: Advanced Hybrid Scoring
 - Contextual adjustments (13 rules)
 - Confidence quantification
 - Feature interactions (5 types)
@@ -375,7 +375,7 @@ pytest logis_ai_candidate_engine/tests/test_phase4_hybrid_scoring.py -v
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 ### Adding New Contextual Rules
 1. Edit `core/scoring/contextual_adjuster.py`
@@ -397,14 +397,7 @@ pytest logis_ai_candidate_engine/tests/test_phase4_hybrid_scoring.py -v
 
 ---
 
-## 👥 Team
-
-Built by **AI Engineering Team**  
-To **Senior SDE/ML Engineer Standards** (Google/Microsoft Level)
-
----
-
-## 📞 Support
+##  Support
 
 For questions or issues:
 1. Check `PHASE4_QUICK_REFERENCE.md` for common tasks
@@ -414,14 +407,14 @@ For questions or issues:
 
 ---
 
-## ✅ Project Status
+##  Project Status
 
 **Version**: 2.0.0  
-**Status**: ✅ Production-Ready  
+**Status**:  Production-Ready  
 **Last Updated**: January 2024  
 **Test Coverage**: 94+ tests passing  
 **Performance**: <300ms latency  
-**Standards**: Enterprise-grade, Google/Microsoft SDE level
+
 
 ---
 
